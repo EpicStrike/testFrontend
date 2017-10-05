@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'ptsans';
+    src: url('fonts/web/ptsans.woff') format('woff'),
+    url('fonts/web/ptsans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ptsans';
+    src: url('fonts/web/ptsansbold.woff') format('woff'),
+    url('fonts/web/ptsansbold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html,body{
+    overflow: hidden;
+    margin: 0 0;
+    background-color: #f2f2f2;
+    font-family: ptsans;
+}
+.page{
+/*    margin-left: calc(50vw - 600px);
+    margin-right: calc(50vw - 600px); */
+    width: 1200px;
+    margin: auto auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: none;
+}
+.logo{
+    position: absolute;
+    width: 138px;
+    height: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('img/logo.png');
+    border: none;
+}
+.menu{
+    width: 100%;
+}
+.menu ul{
+    height: 56px;
+    padding-left: 0;
+    font-size: 0;
+    background-color: white;
+
+}
+.menu li{
+    vertical-align: top;
+    text-align: center;
+    line-height: 56px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 236px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.intro{
+    position: absolute;
+    background-image: url('img/intro-bg.jpg');
+    height: 773px;
+    width:inherit;
+}
+.intro-shape{
+    background-image: url('img/intro-shaper.png');
+    position: fixed;
+    align-self: baseline;
+}
