@@ -35,7 +35,6 @@ html,body{
     width: 1200px;
     margin: 0 6%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    height: 2762px;
     background-color: white;
     text-transform: uppercase;
     background-image: url('img/intro-bg.jpg');
@@ -48,9 +47,7 @@ html,body{
     border: none;
 }
 .menu{
-    background: none;
     height: 70px;
-    width: 100%;
 }
 .menu ul{
     height: 56px;
@@ -86,7 +83,6 @@ html,body{
     float: right;
 }
 .intro{
-
     height: 565px;
     width:inherit;
 }
@@ -96,34 +92,34 @@ html,body{
     width: 100%;
     height: 57px;
 }
-#welcome{
+.welcome{
     font-family: fantasy;
     color: #81b4d3;
     margin-top: 55px;
     text-align: center;
     font-size: 50px;
 }
-#welcome img{
+.welcome img{
     width: 260px;
     height: 32px;
 }
-#title{
+.title{
     padding-top: 10px;
     text-align: center;
     font-weight: bold;
     color: white;
     font-size: 122px;
 }
-#title img{
+.title img{
     width: 300px;
     height: 84px;
     margin-top: 17px;
 }
-#content{
+.content{
     width: inherit;
     background-color: white;
 }
-#content .title{
+.content .title{
     text-align: center;
     margin: 0 auto;
     padding-top: 57px;
@@ -132,37 +128,37 @@ html,body{
     font-weight: bold;
     width: 500px;
 }
-#content .sub-title{
+.content .sub-title{
     margin: 29px auto;
     text-align: center;
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 55px;
 }
-#comparation-box{
+.comparation-box{
     font-size:0;
 }
-#comparation-box div{
+.comparation-box div{
     vertical-align: top;
 }
-#content td{
+.content td{
     width: 33.33333333%;
     text-align: center;
 }
-#content tr{
+.content tr{
     height: 257px;
 }
-#content .one-size-block{
+.content .one-size-block{
     display: inline-block;
     width: 33.33333%;
     height: 257px;
 }
-#content .double-size-block{
+.content .double-size-block{
     display: inline-block;
     width: 66.66666%;
     height: 257px;
 }
-#content .one-size-block img{
+.content .one-size-block img{
     padding: 58px 0 0 162px;
 }
 .blue-theme{
@@ -206,7 +202,7 @@ html,body{
 .comparation-row:nth-child(4){
     background-color: #eeeeee;
 }
-#whitespase-bar{
+.whitespace-bar{
     height: 71px;
 }
 .interesting{
@@ -221,14 +217,14 @@ html,body{
     height: 540px;
     margin-top: -58px;
 }
-#footer{
+.footer{
 
     position: relative;
     top: -65px;
     font-size: 0;
     background-color: rgba(255,255,255,0.95);
 }
-#footer .footer-block{
+.footer .footer-block{
     vertical-align: top;
     display: inline-block;
     width: 33.33333%;
@@ -238,14 +234,14 @@ html,body{
     font-size: 20px;
     font-weight: bold;
 }
-#footer .footer-block:nth-child(3){
+.footer .footer-block:nth-child(3){
     font-size: 13px;
 }
-#footer .socials{
+.footer .socials{
     width: 55px;
     height: 55px;
 }
-#label-site{
+.label-site{
     vertical-align: top;
     padding-top: 0;
     font-size: 14px;
