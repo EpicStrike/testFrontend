@@ -14,10 +14,20 @@
 }
 
 html,body{
-    overflow: hidden;
+  /*  overflow: hidden; */
     margin: 0 0;
     background-color: #f2f2f2;
     font-family: ptsans;
+}
+h1{
+    letter-spacing: -1.1px;
+    padding-bottom: 9px;
+}
+h5{
+    color: #333333;
+    font-weight: inherit;
+    letter-spacing: 0.4px;
+    line-height: 0.3;
 }
 .page{
 /*    margin-left: calc(50vw - 600px);
@@ -25,7 +35,9 @@ html,body{
     width: 1200px;
     margin: auto auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    box-shadow: none;
+    height: 2762px;
+    background-color: white;
+    text-transform: uppercase;
 }
 .logo{
     position: absolute;
@@ -37,6 +49,8 @@ html,body{
     border: none;
 }
 .menu{
+    background: none;
+    height: 70px;
     width: 100%;
 }
 .menu ul{
@@ -57,13 +71,141 @@ html,body{
     text-transform: uppercase;
 }
 .intro{
-    position: absolute;
     background-image: url('img/intro-bg.jpg');
-    height: 773px;
+    height: 565px;
     width:inherit;
 }
 .intro-shape{
     background-image: url('img/intro-shaper.png');
-    position: fixed;
-    align-self: baseline;
+    margin-top: 21px;
+    width: 100%;
+    height: 57px;
+}
+#welcome{
+    font-family: fantasy;
+    color: #81b4d3;
+    margin-top: 55px;
+    text-align: center;
+    font-size: 50px;
+}
+#welcome img{
+    width: 260px;
+    height: 32px;
+}
+#title{
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 122px;
+}
+#title img{
+    width: 300px;
+    height: 84px;
+    margin-top: 17px;
+}
+#content{
+    width: inherit;
+    background-color: white;
+}
+#content .title{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 57px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 500px;
+}
+#content .sub-title{
+    margin: 29px auto;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
+#comparation-box{
+    font-size:0;
+}
+#comparation-box div{
+    vertical-align: top;
+}
+#content td{
+    width: 33.33333333%;
+    text-align: center;
+}
+#content tr{
+    height: 257px;
+}
+#content .col-1{
+    display: inline-block;
+    width: 33.33333%;
+    height: 257px;
+}
+#content .col-2{
+    display: inline-block;
+    width: 66.66666%;
+    height: 257px;
+}
+#content .col-1 img{
+    padding: 58px 0 0 162px;
+    width: 75px;
+    height: 75px;
+}
+.blue-theme{
+    background-color: #82b3d3;
+    color: white;
+}
+.with-bottom{
+    height: 330px!important;
+}
+#content .row-2{
+    height: 330px;
+}
+.comparation-item p:nth-child(1){
+    text-align: center;
+    padding: 27px 133px 0 123px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.05;
+}
+.comparation-item p:nth-child(2){
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 6px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+.comparation-item p:nth-child(3){
+    font-size: 14px;
+    padding: 12px 60px 0 64px;
+    text-align: center;
+    line-height: 1.5;
+}
+.comparation-advantage p:nth-child(2){
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.comparation-advantage p:nth-child(3){
+    font-size: 14px;
+    text-align: center;
+    padding: 1px 50px 0 50px;
+    line-height: 1.5;
+}
+.cmp-row:nth-child(4){
+    background-color: #eeeeee;
+}
+#interesting{
+    text-align: center;
+    padding-top: 23px;
+}
+#map-hotels{
+    background-image: url(img/house-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 540px;
+    margin-top: 195px;
 }
