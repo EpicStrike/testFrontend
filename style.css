@@ -150,17 +150,17 @@ h5{
 #content tr{
     height: 257px;
 }
-#content .col-1{
+#content .one-size-block{
     display: inline-block;
     width: 33.33333%;
     height: 257px;
 }
-#content .col-2{
+#content .double-size-block{
     display: inline-block;
     width: 66.66666%;
     height: 257px;
 }
-#content .col-1 img{
+#content .one-size-block img{
     padding: 58px 0 0 162px;
 }
 .blue-theme{
@@ -168,9 +168,6 @@ h5{
     color: white;
 }
 
-#content .row-2{
-    height: 330px;
-}
 .comparation-item p:nth-child(1){
     text-align: center;
     padding: 27px 133px 0 123px;
