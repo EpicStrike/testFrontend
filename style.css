@@ -1,13 +1,13 @@
 @charset "windows-1251";
 @font-face {
-    font-family: 'ptsans';
+    font-family: 'PT_Sans';
     src: url('fonts/web/ptsans.woff') format('woff'),
     url('fonts/web/ptsans.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'ptsans';
+    font-family: 'PT_Sans';
     src: url('fonts/web/ptsansbold.woff') format('woff'),
     url('fonts/web/ptsansbold.woff2') format('woff2');
     font-weight: bold;
@@ -16,28 +16,30 @@
 
 html,body{
   /*  overflow: hidden; */
-    margin: 0 0;
+    margin: 0;
     background-color: #f2f2f2;
-    font-family: ptsans;
+    font-family: PT_Sans;
 }
-h1{
+.interesting header{
     letter-spacing: -1.1px;
     padding-bottom: 9px;
+    font-size: 32px;
+    font-weight: bold;
 }
-h5{
+.interesting p{
     color: #333333;
-    font-weight: inherit;
     letter-spacing: 0.4px;
-    line-height: 0.3;
+    line-height: 0.8;
 }
 .page-wrapper{
     width: 1200px;
-    margin: auto 6%;
+    margin: 0 6%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     height: 2762px;
     background-color: white;
     text-transform: uppercase;
     background-image: url('img/intro-bg.jpg');
+    background-repeat: no-repeat;
 }
 .logo{
     position: absolute;
@@ -207,7 +209,7 @@ h5{
 #whitespase-bar{
     height: 71px;
 }
-#interesting{
+.interesting{
     text-align: center;
     padding-top: 23px;
 }
