@@ -41,11 +41,8 @@ h5{
 }
 .logo{
     position: absolute;
-    width: 138px;
-    height: 70px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url('img/logo.png');
     border: none;
 }
 .menu{
