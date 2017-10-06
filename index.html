@@ -1,17 +1,22 @@
-<link href="style.css" rel="stylesheet">
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
 <div class="page">
     <div class="intro">
+        <div class="logo"></div>
         <div class="menu">
             <ul>
-                <li>Информация</li>
-                <li>Фото и видео</li>
-                <li><div class="logo"></div></li>
-                <li>Карта штата</li>
-                <li>Гостиницы</li>
+                <li><a>Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="#">Гостиницы</a></li>
             </ul>
         </div>
-        <div id="welcome">WELCOME<br><img bgcolor="#0000ff"></div>
-        <div id="title">SEDONA<br><img bgcolor="#0000ff"></div>
+        <div id="welcome">WELCOME<br><img src="img/to_the_gorgeous.png" width="260px" height="32px"/></div>
+        <div id="title">SEDONA<br><img src="img/because.png" width="300px" height="84px"/></div>
         <div class="intro-shape"></div>
     </div>
     <div id="content">
@@ -25,29 +30,30 @@
                     <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <div class="col-2">
-                    <img src="img/house-bg.jpg">
+                    <img src="img/house-bg.jpg" width="800px" height="256px">
                 </div>
             </div>
             <div class="cmp-row">
-                <div class="col-1 comparation-advantage with-bottom">
-                    <img src="img/house-bg.jpg">
+                <div class="col-1 comparation-advantage">
+                    <img src="img/icon-1.png" width="75px" height="75px">
                     <p>Жилье</p>
                     <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
-                <div class="col-1 comparation-advantage with-bottom">
-                    <img src="img/house-bg.jpg">
+                <div class="col-1 comparation-advantage">
+                    <img src="img/icon-2.png" width="75px" height="75px"
                     <p>Еда</p>
                     <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                 </div>
-                <div class="col-1 comparation-advantage with-bottom">
-                    <img src="img/house-bg.jpg">
+                <div class="col-1 comparation-advantage">
+                    <img src="img/icon-3.png" width="75px" height="75px">
                     <p>Сувениры</p>
                     <p>Не только китайского, но и местного производства!</p>
                 </div>
+                <div id="whitespase-bar"></div>
             </div>
             <div class="cmp-row">
                 <div class="col-2">
-                    <img src="img/canyon-bg.jpg">
+                    <img src="img/canyon-bg.jpg" width="800px" height="256px">>
                 </div>
                 <div class="col-1 comparation-item blue-theme">
                     <p>Там есть мост дьявола</p>
@@ -78,9 +84,22 @@
         <h1>Заинтересовались?</h1>
         <h5>Укажите предполагаемые даты поездки,</h5>
         <h5>и мы покажем вам лучшие предложения гостиниц в Седоне</h5>
+        <div id="search-btn">Поиск гостиницы в Седоне</div>
         <div id="map-hotels"></div>
     </div>
     <div id="footer">
-
+        <div class="footer-block">
+            #VISITSEDONA
+        </div>
+        <div class="footer-block">
+            <img class="socials" src="img/t.jpg" width="55px" height="55px">
+            <img class="socials" src="img/fb.jpg" width="55px" height="55px">
+            <img class="socials" src="img/youtube.jpg" width="55px" height="55px">
+        </div>
+        <div class="footer-block">
+            <div id="label-site">Website by</div> <img class="academy" src="img/logo_name.png" width="115px" height="41px">
+        </div>
     </div>
 </div>
+</body>
+</html>
