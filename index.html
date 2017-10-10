@@ -3,11 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>Frontend test</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="page-wrapper">
-    <img class="logo" src="img/logo.png" width="138" height="70"></img>
+    <header>
+    <img class="logo" src="img/logo.png" width="138" height="70">
     <nav class="menu">
         <ul>
             <li><a>Информация</a></li>
@@ -16,13 +18,15 @@
             <li><a href="./hotels.html">Гостиницы</a></li>
         </ul>
     </nav>
+    </header>
+    <main>
     <div class="intro">
         <img class="welcome-img" src="img/welcome.png" width="253" height="88" alt="welcome"/>
         <img class="sedona-img" src="img/sedona.png" width="460" height="216" alt="sedona"/>
 
     </div>
     <div class="content">
-        <header class="title">Седона – небольшой городок в Аризоне, заслуживающий большего!</header>
+        <h1 class="title">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="sub-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <div class="comparation-box">
             <div class="comparation-row house-block">
@@ -78,33 +82,34 @@
         </div>
     </div>
     <div class="interesting">
-        <header>Заинтересовались?</header>
+        <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,</p>
         <p>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div id="search-btn">Поиск гостиницы в Седоне</div>
         <div id="map-hotels"></div>
     </div>
-    <div class="footer">
+    </main>
+    <footer class="footer">
         <div class="footer-block">
             <a href="#">#VISITSEDONA</a>
         </div>
         <div class="footer-block">
             <ul class="socials">
                 <li>
-                    <a href="http://twitter.com"><img class="socials" src="img/twitter-icon.png" width="47" height="47" alt="twitter"></a>
+                    <a href="http://twitter.com"><img src="img/twitter-icon.png" width="17" height="15" alt="twitter"></a>
                 </li>
                 <li>
-                    <a href="http://fb.com"><img class="socials" src="img/facebook-icon.png" width="47" height="47" alt="facebook"></a>
+                    <a href="http://fb.com"><img src="img/facebook-icon.png" width="12" height="22" alt="facebook"></a>
                 </li>
                 <li>
-                    <a href="http://youtube.com"><img class="socials" src="img/youtube-icon.png" width="47" height="47" alt="youtube"></a>
+                    <a href="http://youtube.com"><img src="img/youtube-icon.png" width="20" height="16" alt="youtube"></a>
                 </li>
             </ul>
         </div>
         <div class="footer-block">
             <a href="http://htmlacademy.ru"><div class="label-site">Website by</div> <img class="academy" src="img/logo_name.png" width="115" height="40" alt="logo academy"></a>
         </div>
-    </div>
+    </footer>
 </div>
 </body>
 </html>
