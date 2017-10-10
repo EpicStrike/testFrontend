@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <link href="style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Frontend test</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="page-wrapper">
@@ -17,64 +17,59 @@
         </ul>
     </nav>
     <div class="intro">
-        <div class="welcome">WELCOME<br><img src="img/to_the_gorgeous.png" width="260" height="32" alt="to_the_gorgeous"/></div>
-        <div class="title">SEDONA<br><img src="img/because.png" width="300" height="84" alt="because"/></div>
-        <div class="intro-shape"></div>
+        <img class="welcome-img" src="img/welcome.png" width="253" height="88" alt="welcome"/>
+        <img class="sedona-img" src="img/sedona.png" width="460" height="216" alt="sedona"/>
+
     </div>
     <div class="content">
         <header class="title">Седона – небольшой городок в Аризоне, заслуживающий большего!</header>
         <p class="sub-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <div class="comparation-box">
-            <div class="comparation-row">
+            <div class="comparation-row house-block">
                 <div class="one-size-block comparation-item blue-theme">
                     <p>Настоящий городок</p>
                     <p>– №1 –</p>
                     <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <div class="double-size-block">
-                    <img src="img/house-bg.jpg" width="800" height="256" alt="house">
-                </div>
             </div>
             <div class="comparation-row">
                 <div class="one-size-block comparation-advantage">
-                    <img src="img/icon-1.png" width="75" height="75" alt="icon-1">
+                    <img src="img/house.png" width="75" height="75" alt="house">
                     <p>Жилье</p>
                     <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
                 <div class="one-size-block comparation-advantage">
-                    <img src="img/icon-2.png" width="75" height="75" alt="icon-2">
+                    <img src="img/burger.png" width="75" height="75" alt="food">
                     <p>Еда</p>
                     <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                 </div>
                 <div class="one-size-block comparation-advantage">
-                    <img src="img/icon-3.png" width="75" height="75" alt="icon-3">
+                    <img src="img/souvenir.png" width="75" height="75" alt="souvenir">
                     <p>Сувениры</p>
                     <p>Не только китайского, но и местного производства!</p>
                 </div>
-                <div class="whitespase-bar"></div>
+                <div class="whitespace-bar"></div>
             </div>
-            <div class="comparation-row">
-                <div class="double-size-block">
-                    <img src="img/canyon-bg.jpg" width="800" height="256" alt="canyon">
-                </div>
-                <div class="one-size-block comparation-item blue-theme">
+            <div class="comparation-row canyon-block">
+
+                <div class="one-size-block comparation-item blue-theme offset-double-size-block">
                     <p>Там есть мост дьявола</p>
                     <p>– №2 –</p>
                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
             </div>
             <div class="comparation-row">
-                <div class="one-size-block comparation-item">
+                <div class="one-size-block comparation-item-second">
                     <p>Небольшая площадь</p>
                     <p>– №3 –</p>
                     <p>Все достопримечательности находятся очень близко</p>
                 </div>
-                <div class="one-size-block comparation-item">
+                <div class="one-size-block comparation-item-second">
                     <p>Красивая дорога</p>
                     <p>– №4 –</p>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
                 </div>
-                <div class="one-size-block comparation-item">
+                <div class="one-size-block comparation-item-second">
                     <p>Мало туристов</p>
                     <p>– №5 –</p>
                     <p>Большинство едет в гранд каньон и толпится там</p>
@@ -91,15 +86,23 @@
     </div>
     <div class="footer">
         <div class="footer-block">
-            #VISITSEDONA
+            <a href="#">#VISITSEDONA</a>
         </div>
         <div class="footer-block">
-            <img class="socials" src="img/t.jpg" width="55" height="55" alt="twitter">
-            <img class="socials" src="img/fb.jpg" width="55" height="55" alt="facebook">
-            <img class="socials" src="img/youtube.jpg" width="55" height="55" alt="youtube">
+            <ul class="socials">
+                <li>
+                    <a href="http://twitter.com"><img class="socials" src="img/twitter-icon.png" width="47" height="47" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="http://fb.com"><img class="socials" src="img/facebook-icon.png" width="47" height="47" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="http://youtube.com"><img class="socials" src="img/youtube-icon.png" width="47" height="47" alt="youtube"></a>
+                </li>
+            </ul>
         </div>
         <div class="footer-block">
-            <div class="label-site">Website by</div> <img class="academy" src="img/logo_name.png" width="115" height="41" alt="logo academy">
+            <a href="http://htmlacademy.ru"><div class="label-site">Website by</div> <img class="academy" src="img/logo_name.png" width="115" height="40" alt="logo academy"></a>
         </div>
     </div>
 </div>

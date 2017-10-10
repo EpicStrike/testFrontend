@@ -1,15 +1,14 @@
-@charset "windows-1251";
 @font-face {
     font-family: 'PT_Sans';
-    src: url('fonts/web/ptsans.woff') format('woff'),
-    url('fonts/web/ptsans.woff2') format('woff2');
+    src: url('../fonts/web/ptsans.woff') format('woff'),
+    url('../fonts/web/ptsans.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'PT_Sans';
-    src: url('fonts/web/ptsansbold.woff') format('woff'),
-    url('fonts/web/ptsansbold.woff2') format('woff2');
+    src: url('../fonts/web/ptsansbold.woff') format('woff'),
+    url('../fonts/web/ptsansbold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
@@ -21,33 +20,36 @@ html,body{
     font-family: PT_Sans;
 }
 .interesting header{
-    letter-spacing: -1.1px;
-    padding-bottom: 9px;
-    font-size: 32px;
+    margin-top: 26px;
+    line-height: 36px;
+    font-size: 30px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 .interesting p{
     color: #333333;
-    letter-spacing: 0.4px;
-    line-height: 0.8;
+    line-height: 10px;
+    font-size: 14px;
 }
 .page-wrapper{
     width: 1200px;
-    margin: 0 6%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
     background-color: white;
     text-transform: uppercase;
-    background-image: url('img/intro-bg.jpg');
+    background-image: url('../img/intro-bg.jpg');
     background-repeat: no-repeat;
 }
 .logo{
-    position: absolute;
-    left: 50%;
+    left: 600px;
     transform: translateX(-50%);
     border: none;
+    margin-left: 600px;
 }
 .menu{
+    padding: 0 6%;
     height: 70px;
+    margin-top: -75px;
 }
 .menu ul{
     height: 56px;
@@ -86,11 +88,10 @@ html,body{
     height: 565px;
     width:inherit;
 }
-.intro-shape{
-    background-image: url('img/intro-shaper.png');
-    margin-top: 60px;
-    width: 100%;
-    height: 57px;
+.intro:after{
+    position: relative;
+    content: url('../img/shape.png');
+    top: 34px;
 }
 .welcome{
     font-family: fantasy;
@@ -99,16 +100,25 @@ html,body{
     text-align: center;
     font-size: 50px;
 }
-.welcome img{
-    width: 260px;
-    height: 32px;
+.welcome-img{
+    margin: 61px 600px;
+    transform: translateX(-50%);
+    width: 253px;
+    height: 88px;
 }
+.sedona-img{
+    margin: -15px 600px;
+    transform: translateX(-50%);
+    width: 460px;
+    height: 216px;
+}
+
 .title{
     padding-top: 10px;
     text-align: center;
     font-weight: bold;
-    color: white;
-    font-size: 122px;
+    font-size: 21px;
+    line-height: 26px;
 }
 .title img{
     width: 300px;
@@ -118,6 +128,7 @@ html,body{
 .content{
     width: inherit;
     background-color: white;
+    margin-top: -70px;
 }
 .content .title{
     text-align: center;
@@ -129,11 +140,11 @@ html,body{
     width: 500px;
 }
 .content .sub-title{
-    margin: 29px auto;
+    margin: 32px auto;
     text-align: center;
     font-size: 14px;
     text-transform: uppercase;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
 }
 .comparation-box{
     font-size:0;
@@ -159,23 +170,25 @@ html,body{
     height: 257px;
 }
 .content .one-size-block img{
-    padding: 58px 0 0 162px;
+    padding: 55px 0 0 162px;
 }
 .blue-theme{
     background-color: #82b3d3;
     color: white;
 }
 
+.comparation-item-second p:nth-child(1),
 .comparation-item p:nth-child(1){
     text-align: center;
-    padding: 27px 133px 0 123px;
-    font-size: 20px;
+    padding: 24px 125px 0 124px;
+    line-height: 21px;
+    font-size: 21px;
     font-weight: bold;
-    line-height: 1.05;
 }
+.comparation-item-second p:nth-child(2),
 .comparation-item p:nth-child(2){
     font-size: 14px;
-    font-weight: bold;
+    font-family: sans-serif;
     padding-top: 6px;
     text-align: center;
     line-height: 1;
@@ -183,20 +196,26 @@ html,body{
 }
 .comparation-item p:nth-child(3){
     font-size: 14px;
-    padding: 12px 60px 0 64px;
+    line-height: 21px;
+    padding: 10px 40px 0 40px;
     text-align: center;
-    line-height: 1.5;
 }
 .comparation-advantage p:nth-child(2){
     text-align: center;
     padding-top: 5px;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
 }
 .comparation-advantage p:nth-child(3){
     font-size: 14px;
     text-align: center;
     padding: 1px 50px 0 50px;
+    line-height: 1.5;
+}
+.comparation-item-second p:nth-child(3){
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 62px 0 60px;
     line-height: 1.5;
 }
 .comparation-row:nth-child(4){
@@ -210,7 +229,7 @@ html,body{
     padding-top: 23px;
 }
 #map-hotels{
-    background-image: url(img/map.jpg);
+    background-image: url('../img/map.jpg');
     background-color:#f2f1ef;
     background-size: cover;
     width: 100%;
@@ -218,11 +237,10 @@ html,body{
     margin-top: -58px;
 }
 .footer{
-
-    position: relative;
-    top: -65px;
+    margin-top: -120px;
+    height: 120px;
     font-size: 0;
-    background-color: rgba(255,255,255,0.95);
+    background-color: rgba(255,255,255,0.9);
 }
 .footer .footer-block{
     vertical-align: top;
@@ -230,34 +248,58 @@ html,body{
     width: 33.33333%;
     height: 75px;
     text-align: center;
-    padding-top: 40px;
-    font-size: 20px;
+    padding-top: 44px;
+    font-size: 21px;
+    line-height: 26px;
     font-weight: bold;
+}
+.footer-block a{
+    color: inherit;
+    text-decoration: none;
 }
 .footer .footer-block:nth-child(3){
     font-size: 13px;
+    font-weight: 100;
 }
 .footer .socials{
-    width: 55px;
-    height: 55px;
+    width: 47px;
+    height: 47px;
+    margin-top: -10px;
+    display: inline;
+}
+.socials li{
+    display:inline-block;
+    background-color: #82b3d3;
 }
 .label-site{
     vertical-align: top;
     padding-top: 0;
     font-size: 14px;
-    line-height: 37px;
-    margin-right: 20px;
-    font-weight: 500;
+    line-height: 26px;
     width: 80px;
+    font-weight: 100;
     display: inline-block;
 }
 #search-btn{
-    background-color: #81b3d2;
+    background-color: #766257;
+    color: white;
     width: 546px;
     height: 58px;
-    margin: 56px auto;
+    margin: 55px auto;
     font-size: 21px;
-    padding-top: 28px;
-    padding-right: 18px;
+    line-height: 26px;
+    padding: 30px 12px 0 12px;
     font-weight: bold;
+}
+.academy{
+    margin-top: -5px;
+}
+.house-block{
+    background: url('../img/house-bg.jpg');
+}
+.canyon-block{
+    background: url('../img/canyon-bg.jpg');
+}
+.offset-double-size-block{
+    margin-left: 800px;
 }
